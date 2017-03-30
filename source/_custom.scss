@@ -1,0 +1,118 @@
+//
+// Custom
+// --------------------------------------------------
+
+:root {
+  letter-spacing: $letter-spacing;
+  text-rendering: geometricPrecision;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: 'kern', 'onum', 'liga';
+
+}
+
+a {
+  text-decoration: underline;
+  -webkit-text-decoration-skip: ink;
+  text-decoration-color: getColor(text, secondary);
+}
+
+ol {
+
+  counter-reset: ol-counter;
+  list-style-type: none;
+
+  li {
+    padding-bottom: 1lh;
+    position: relative;
+	  margin-left: 2lh;
+    width: 65%;
+  }
+
+  li::before {
+    position: absolute;
+    left: -1lh;
+    counter-increment: ol-counter;
+    content: counter(ol-counter)". ";
+    color: getColor(text, secondary);
+  }
+}
+
+ul {
+
+  list-style-type: none;
+
+  li {
+    padding-bottom: 1lh;
+    position: relative;
+    margin-left: 2lh;
+    width: 65%;
+  }
+
+  li::before {
+    position: absolute;
+    left: -1lh;
+    top: -0.05lh;
+    content: "⊙";
+    color: getColor(text, secondary);
+  }
+}
+
+header[logo] {
+  position: fixed;
+  top: 1lh;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 20000;
+}
+
+main[grid] {
+  margin: 0
+}
+
+section[intro] {
+  min-height:100vh;
+  background-color: getColor(background, cover);
+  padding-top: 7lh;
+  padding-bottom: 2lh;
+
+  // if screen size is bigger than "small"
+  @media (--small) { padding-top: 9lh }
+}
+
+section[archive] {
+  padding-top: 1lh;
+  // if screen size is bigger than "small"
+  @media (--small) { padding-top: 9lh }
+}
+
+header[small] {
+  //font-size: typeScale(4);
+  font-weight: bold;
+}
+
+header[intro] {
+  color: getColor(gray, base);
+}
+
+article[container] {
+  padding-bottom: 2lh
+}
+
+p[intro] {
+  padding: 1lh 4lh;
+}
+
+p[connect] {
+}
+
+footer {
+
+  margin: 0;
+  padding: 1lh;
+
+  p {
+    font-size: typeScale(1);
+    color: getColor(gray, light);
+  }
+}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="120px" height="120px" viewBox="0 0 120 120" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>tchno-logo</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Logo" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" fill-opacity="0.5">
+        <g id="tchno-logo" fill="#00FF00">
+            <path d="M0,0 L120,0 L120,120 L0,120 L0,0 Z M70.3571771,54.8906772 C70.3608641,54.9110955 70.3644718,54.9315365 70.368,54.952 L75.912,54.952 C75.12,48.472 69.432,42.28 59.712,42.28 C49.272,42.28 42.792,50.344 42.792,61 C42.792,71.656 49.272,79.72 59.712,79.72 C69.504,79.72 74.544,73.312 75.768,66.904 L70.368,66.904 C69.288,71.08 65.616,74.464 60.288,74.464 C53.088,74.464 48.696,69.28 48.696,61 C48.696,58.7126085 49.0311835,56.6614938 49.6681553,54.8906772 L70.3571771,54.8906772 Z" id="Combined-Shape-Copy"></path>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,28 @@
+@mixin baseline($font-size, $base-line-height, $cap-height, $scale: 2) {
+
+	// rhythm unit
+	$rhythm: $base-line-height * $font-size / $scale;
+
+	// number of rhythm units that can fit the font-size
+	$lines: ceil(($font-size + 0.001px) / $rhythm);
+
+	// calculate the new line-height
+	$line-height: $rhythm * $lines / $font-size;
+
+	// use the results
+	line-height: $line-height;
+
+	$baseline-distance: ($line-height - $cap-height) / 2;
+
+	padding-top: $baseline-distance + em;
+	margin-bottom: $base-line-height - $baseline-distance + em;
+}
+
+@mixin showbaseline($font-size, $base-line-height) {
+
+  $line-height: $font-size * $base-line-height;
+
+  $grid-color: rgba(red, 0.15);
+  background: linear-gradient($grid-color, $grid-color 1px, transparent 1px);
+  background-size: 1px $line-height;
+}
