@@ -1,1 +1,0 @@
-# tchno.github.io
